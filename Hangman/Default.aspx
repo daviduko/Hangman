@@ -37,7 +37,8 @@
 
                 <!-- New game button -->
                 <div class="mt-3">
-                    <button class="btn btn-success" runat="server" id="btnNewGame" OnClick="BtnNewGame_Click">Start New Game</button>
+<%--                    <button class="btn btn-success" runat="server" id="btnNewGame" OnClick="BtnNewGame_Click">Start New Game</button>--%>
+                    <asp:Button class="btn btn-success" ID="btnNewGame" runat="server" Text="Start New Game" OnClick="BtnNewGame_Click"/>
                 </div>
             </div>
         </div>

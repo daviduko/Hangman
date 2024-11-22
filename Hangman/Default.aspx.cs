@@ -10,7 +10,7 @@ namespace Hangman
     public partial class _Default : Page
     {
         private const int MaxLives = 6;
-        private List<string> WordList = new List<string> { "elephant", "giraffe", "programming", "developer" };
+        private List<string> WordList = new List<string> { "python", "computer", "programming", "developer" };
 
         private string Word
         {
@@ -57,9 +57,9 @@ namespace Hangman
 
         private void UpdateUI()
         {
-            lblWord.Text = "Word: " + DisplayWord;
+            lblWord.Text = DisplayWord;
             lblLives.Text = "Lives Remaining: " + Lives;
-            lblGuessedLetters.Text = "Guessed Letters: " + string.Join(", ", GuessedLetters);
+            lblGuessedLetters.Text = string.Join(", ", GuessedLetters);
         }
 
         protected void BtnGuess_Click(object sender, EventArgs e)
